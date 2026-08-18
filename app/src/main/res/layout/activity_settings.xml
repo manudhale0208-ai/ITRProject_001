@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- Notifications -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="10dp"/>
+
+        <Switch
+            android:id="@+id/switchNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable notifications"
+            android:textSize="16sp"
+            android:padding="12dp"/>
+
+        <!-- Dark Mode -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appearance"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="20dp"/>
+
+        <Switch
+            android:id="@+id/switchDarkMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dark mode"
+            android:textSize="16sp"
+            android:padding="12dp"/>
+
+        <!-- About -->
+
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Open Library"
+            android:textAllCaps="false"
+            android:layout_marginTop="25dp"/>
+
+        <!-- Logout -->
+
+        <Button
+            android:id="@+id/btnSettingsLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

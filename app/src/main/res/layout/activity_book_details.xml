@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F4FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+
+        <!-- TOP BAR -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/circle_button"
+                android:src="@drawable/ic_arrow_back"
+                android:padding="10dp"
+                android:contentDescription="Back"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Book Details"
+                android:textColor="#342A47"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+        </LinearLayout>
+
+        <!-- COVER -->
+
+        <ImageView
+            android:id="@+id/ivBookCover"
+            android:layout_width="200dp"
+            android:layout_height="285dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:background="#EDE2FA"
+            android:elevation="8dp"
+            android:contentDescription="Book Cover"/>
+
+        <!-- TITLE -->
+
+        <TextView
+            android:id="@+id/tvBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:gravity="center"
+            android:text="Book Title"
+            android:textColor="#342A47"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <!-- AUTHOR -->
+
+        <TextView
+            android:id="@+id/tvBookAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="By Author"
+            android:textColor="#777080"
+            android:textSize="16sp"/>
+
+        <!-- YEAR -->
+
+        <TextView
+            android:id="@+id/tvBookYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#EDE2FA"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="Published: 2025"
+            android:textColor="#6847A9"
+            android:textStyle="bold"/>
+
+        <!-- INFORMATION CARD -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Information"
+                    android:textColor="#342A47"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvBookEditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="📚 Editions"
+                    android:textColor="#777080"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tvBookLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="🌐 Languages"
+                    android:textColor="#777080"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="📖 Preview Book"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnRecommendations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="✨ Recommended Books"
+            android:textSize="15sp" />
+
+
+
+
+
+        <!-- FAVOURITE BUTTON -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFavourite"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="♡  Add to Favourites"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#8A5BD6"
+            app:cornerRadius="18dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

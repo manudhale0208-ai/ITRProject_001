@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F4FC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/open_library_logo"
+            android:contentDescription="Library Logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Create Account"
+            android:textColor="#4F46B5"
+            android:textSize="27sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:hint="Full Name"
+            android:paddingStart="18dp"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="14dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="18dp"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="14dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="18dp"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="14dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingStart="18dp"
+            android:background="@drawable/edittext_background"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:text="CREATE ACCOUNT"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:backgroundTint="#6D4FC2"/>
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp"
+            android:text="Already have an account? Login"
+            android:textColor="#6D4FC2"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</ScrollView>
